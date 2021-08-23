@@ -1,10 +1,6 @@
 
 
-1)  src - src contain all important scripts with different function for the project 
 
-2)  tests - Here we perform all the test related activity 
-
-requirements.txt - requirement files contains all the  module used in this project.
 ## Data Source
 [source](https://www.kaggle.com/therohk/million-headlines#)
 
