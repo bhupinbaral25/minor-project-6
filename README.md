@@ -10,7 +10,7 @@ requirements.txt - requirement files contains all the  module used in this proje
 
 # About
 
-This is the repository for minor Project-6 of machine learning intership at leaprog Technology. Project is based on NLP to recoomend the similar sentence using pretrain model for sentence embedding.
+This is the repository for minor Project-6 of machine learning intership at leaprog Technology. Project is based on NLP to recommend the similar sentence using pretrain model for sentence embedding.
 
 ## Look Once
 
