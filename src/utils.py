@@ -1,5 +1,16 @@
 import numpy as np
+import pandas as pd
 from sentence_transformers import  util, SentenceTransformer
+
+def read_data(path):
+    '''
+    csv file path in string
+    --------------------------------
+    Read CSV file
+    --------------------------------
+    return dataframe
+    '''
+    return pd.read_csv(path)
 
 def get_sentence_embeddings(model, sentence : list ) :
     
@@ -13,7 +24,7 @@ def get_sentence_embeddings(model, sentence : list ) :
 
     return model.encode(sentence)
 
-def get_high_similarity_score(model, dataframe, sentance_1 : str, sentence_2 : str):
+def get_similarity_score(model, dataframe, sentance_1 : str, sentence_2 : str):
 
     '''
     machine learning/ deep learning model
@@ -21,7 +32,7 @@ def get_high_similarity_score(model, dataframe, sentance_1 : str, sentence_2 : s
     generate embeddings by using  ml model and calculate 
     similarity score of sentences to dataframe for that model
     --------------------------------------------------------------
-    return Similarity Score of multiple model in one dictionary
+    return Similarity Score of sentence in array
     '''
 
     similarity_score = []
